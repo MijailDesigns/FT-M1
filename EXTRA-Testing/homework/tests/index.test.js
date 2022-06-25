@@ -42,7 +42,7 @@ describe('getRowNumber',() => {
 })
 
 
-
+describe('book', () => {
   it('should book the seat if the seat of the row and column given is free', () => {
     expect(checkSeatStatus('E',3)).toBe(false);
     expect(book('E',3)).toBe('Seat in E3 successfully booked');
@@ -52,6 +52,8 @@ describe('getRowNumber',() => {
   it('should say that is busy if the seat of the row and column given is already booked', () => {
     expect(book('E', 1)).toBe('Seat in E1 is already booked')
   });
+});
+  
 
 
 
